@@ -1,0 +1,77 @@
+.process_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    margin: 3em auto;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.direct-contact {
+    position: relative;
+    padding: 2.5em 1.75em;
+    padding-bottom: 10em;
+
+    background-color: var(--background-green);
+}
+
+.direct-contact__image {
+    position: absolute;
+    width: min(50%, 225px);
+    bottom: 0;
+    right: 0;
+}
+
+.direct-contact__image > img {
+    width: 100%;
+}
+
+.direct-contact__header {
+    width: 90%;
+    margin-bottom: 1.5em;
+
+    color: var(--dark-green);
+    font-family: 'Playfair', serif;
+}
+
+.direct-contact__link {
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 0.75em;
+
+    border-radius: 0.25em;
+    box-shadow: 2px 3px 10px var(--dark-green-shadow);
+    background-color: var(--dark-green);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.step {
+    display: flex;
+    justify-content: space-around;
+    padding: 1em 1em;
+
+    /* border-radius: 0 20px 20px 0; */
+    background-color: var(--background-blue);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.step--count {
+    align-self: center;
+
+    padding: 0.5em 0.8em;
+    border-radius: 100%;
+    box-shadow: 0 5px 10px var(--dark-blue-shadow);
+
+    color: white;
+    font-weight: 600;
+    background-color: #586A8A;
+}
+
+.step--instruction {
+    width: 70%;
+}

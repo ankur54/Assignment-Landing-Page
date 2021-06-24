@@ -7,6 +7,12 @@
 :root {
   --card-color: #496391;
   --background-blue: #CFD6E2;
+  --dark-blue: #1B2A44;
+  --dark-blue-shadow: #1b2a4473;
+  --dark-green: #1B4332;
+  --dark-green-shadow: #1b433280;
+  --background-green: #CFE4D3;
+
 }
 
 section {
