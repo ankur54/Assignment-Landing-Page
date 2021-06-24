@@ -1,0 +1,40 @@
+#features p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#features h2 {
+    font-size: 1.4em;
+    font-family: 'Playfair Display', serif;
+}
+
+.features_list {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 5em;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+    justify-content: center;
+    align-items: center;
+
+    padding: 2em 0;
+}
+
+.feature_image,
+.feature_content {
+    width: 75%;
+}
+
+.feature_content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+.feature_image > img {
+    width: 100%;
+}

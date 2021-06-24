@@ -1,0 +1,26 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --card-color: #496391;
+  --background-blue: #CFD6E2;
+}
+
+section {
+  padding: 4em 0;
+}
+
+.section_header {
+  text-align: center;
+  font-size: min(8vw, 3.25em);
+  font-family: 'Nunito', sans-serif;
+}
+
+.section_content {
+  width: 75%;
+  margin: 2em auto;
+  text-align: center;
+}
