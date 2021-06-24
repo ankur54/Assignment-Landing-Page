@@ -25,6 +25,7 @@ section {
   font-size: min(8vw, 3.25em);
   font-family: 'Nunito', sans-serif;
 
+  max-width: 80%;
   margin: 2.5em auto;
   margin-top: 0;
 }
