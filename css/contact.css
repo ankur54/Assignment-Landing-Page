@@ -1,0 +1,13 @@
+.contact-us__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.contact-us__image {
+    width: 100%;
+}
+
+.contact-us__image > img {
+    width: 100%;
+}
