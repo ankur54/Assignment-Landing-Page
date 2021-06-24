@@ -1,0 +1,43 @@
+#about-us > .section_header {
+    margin: 0;
+}
+
+.about-us__content {
+    /* position: relative; */
+
+    display: flex;
+    flex-direction: column;
+}
+
+.about-us__image {
+    position: relative;
+    top: 4em;
+
+    width: 75%;
+    margin: 0 auto;
+}
+
+.about-us__image > img {
+    width: 100%;
+
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.30);
+    border-radius: 8px;
+}
+
+.about-us__text {
+    margin: 0 1.25em;
+    padding: 2em 0;
+    padding-top: 5em;
+
+    border-radius: 15px;
+    border: 7px solid #497C66;
+    box-shadow: inset 3px 3px 5px var(--dark-green-shadow),
+                3px 3px 10px var(--dark-green-shadow);
+}
+
+.about-us__text > p {
+    width: 87%;
+    text-align: justify;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+}

@@ -1,3 +1,7 @@
+#services > .section_header {
+    margin-bottom: 0;
+}
+
 .services_list {
     width: min(80%, 650px);
     padding: 3em 1.5em;

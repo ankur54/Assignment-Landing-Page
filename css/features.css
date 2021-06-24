@@ -1,3 +1,7 @@
+#features > .section_header {
+    margin-bottom: 1em;
+}
+
 #features p {
     font-family: 'Montserrat', sans-serif;
 }
