@@ -11,6 +11,7 @@
   --dark-blue-shadow: #1b2a4473;
   --dark-green: #1B4332;
   --dark-green-shadow: #1b433280;
+  --light-green-shadow: #1b43325e;
   --background-green: #CFE4D3;
 
 }
@@ -25,6 +26,7 @@ section {
   font-family: 'Nunito', sans-serif;
 
   margin: 2.5em auto;
+  margin-top: 0;
 }
 
 .section_content {
