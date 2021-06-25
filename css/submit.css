@@ -1,0 +1,28 @@
+.request-form__image {
+    width: 90%;
+}
+
+.request-form__image > img {
+    width: 100%;
+}
+
+.request-form__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.request-submit {
+    /* display: block; */
+    padding: 0.85em 2em;
+    max-width: 70%;
+
+    letter-spacing: 0.25em;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    background-color: var(--dark-blue);
+    border-radius: 0.7em;
+    box-shadow: 3px 5px 15px var(--dark-blue-shadow);
+}

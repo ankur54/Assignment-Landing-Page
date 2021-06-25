@@ -20,6 +20,13 @@ section {
   padding: 4em 0;
 }
 
+input,
+textarea {
+  border: none;
+  background-color: var(--background-blue);
+  border-radius: 1em;
+}
+
 .section_header {
   text-align: center;
   font-size: min(8vw, 3.25em);
