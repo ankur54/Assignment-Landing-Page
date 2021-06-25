@@ -1,6 +1,6 @@
-#about-us > .section_header {
+/* #about-us > .section_header {
     margin: 0;
-}
+} */
 
 .about-us__content {
     /* position: relative; */
@@ -13,7 +13,8 @@
     position: relative;
     top: 4em;
 
-    width: 75%;
+    flex-shrink: 0;
+    width: clamp(150px, 75%, 250px);
     height: 70%;
     margin: 0 auto;
 }
@@ -42,4 +43,31 @@
     text-align: justify;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .about-us__content {
+        flex-direction: row-reverse;
+        justify-content: center;
+
+        width: 80%;
+        min-height: 80vh;
+        margin: 0 auto;
+    }
+
+    .about-us__image {
+        align-self: center;
+        top: 0;
+        right: 5em;
+        margin: 0;
+    }
+
+    .about-us__text {
+        max-width: 600px;
+        padding: 2em 1.5em;
+        padding-right: 5em;
+
+        display: flex;
+        align-items: center;
+    }
 }

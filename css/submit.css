@@ -26,3 +26,29 @@
     border-radius: 0.7em;
     box-shadow: 3px 5px 15px var(--dark-blue-shadow);
 }
+
+@media (min-width: 768px) {
+    .request-form__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .request-form__wrapper > * {
+        flex-basis: 50%;
+    }
+
+    .request-form__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .request-submit {
+        display: block;
+        margin: 0 auto;
+    } */
+}

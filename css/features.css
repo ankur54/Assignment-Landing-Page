@@ -6,7 +6,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-#features h2 {
+.features_content > h2 {
     font-size: 1.4em;
     font-family: 'Playfair Display', serif;
 }
@@ -14,6 +14,7 @@
 .features_list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2em;
     margin-top: 5em;
 }
@@ -41,4 +42,36 @@
 
 .feature_image > img {
     width: 100%;
+}
+
+@media (min-width: 600px) {
+    .feature {
+        flex-direction: row;
+        gap: 5em;
+        flex-basis: 20%;
+
+        max-width: 90%;
+        padding: 1em 5em;
+        border-radius: 20px;
+    }
+
+    .feature:nth-child(odd) {
+        background-color: var(--background-blue);
+        flex-direction: row-reverse;
+        text-align: right;
+    }
+
+    .feature_content {
+        max-width: calc(60% - 2em);
+    }
+
+    .feature_content > h2 {
+        letter-spacing: 0.08em;
+        font-size: 1.85em;
+    }
+
+    .feature_image {
+        max-width: 35%;
+        min-width: 250px ;
+    }
 }

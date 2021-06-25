@@ -27,6 +27,7 @@
 
     padding: 4em 2em;
     padding-top: 0;
+    margin: 0 auto;
 }
 
 .contact-us__header {
@@ -57,4 +58,21 @@
 
 .contact-text {
     font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 768px) {
+    .contact-us__wrapper {
+        flex-direction: row;
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 0 1em 1em 0;
+    }
+    
+    .contact-us__content {
+        padding-top: 4em;
+    }
+
+    .contact-us__image {
+        flex-basis: 40%;
+    }
 }
