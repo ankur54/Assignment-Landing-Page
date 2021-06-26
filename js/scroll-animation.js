@@ -14,9 +14,9 @@ sr.reveal(`.card`, {
     // distance: '75px',
     // origin: 'top',
     opacity: 0,
-    scale: 0,
+    scale: 0.75,
     interval: 100,
-    duration: 2000,
+    duration: 1000,
 })
 
 
