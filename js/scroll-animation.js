@@ -23,14 +23,13 @@ sr.reveal(`.card`, {
 sr.reveal('.feature:nth-child(odd)', {
     distance: '75px',
     origin: 'left',
-    interval: 100,
+    delay: 500,
     duration: 1000,
 })
 
 sr.reveal('.feature:nth-child(even)', {
     distance: '75px',
     origin: 'right',
-    interval: 100,
-    delay: 750,
+    delay: 500,
     duration: 1000,
 })
