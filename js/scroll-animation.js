@@ -11,10 +11,12 @@ sr.reveal(`.section_header`, {
 })
 
 sr.reveal(`.card`, {
-    distance: '75px',
-    origin: 'top',
+    // distance: '75px',
+    // origin: 'top',
+    opacity: 0,
+    scale: 0,
     interval: 100,
-    duration: 750,
+    duration: 2000,
 })
 
 
