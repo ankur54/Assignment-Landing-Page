@@ -1,5 +1,5 @@
 const sr = ScrollReveal({
-    reset: true
+    reset: false
 })
 
 
