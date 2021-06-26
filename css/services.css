@@ -1,15 +1,15 @@
 #services > .section_header {
-    margin-bottom: 0;
+    margin-bottom: 1em;
 }
 
 .services_list {
-    width: 90%;
+    width: 80%;
     padding: 3em 1.5em;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    gap: 2.7em;
+    gap: 3em;
 
     scroll-snap-type: x mandatory;
 }
@@ -23,29 +23,52 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
-    width: clamp(160px, 70%, 180px);
+    width: clamp(160px, 70%, 240px);
     flex-shrink: 0;
     justify-content: center;
-    padding: 1.5em 0.5em;
+    padding: 1em 2em;
+    transition: all 300ms ease-in-out;
+    
+    scroll-snap-align: center;
+}
+
+.card:hover {
     background-color: var(--card-color);
     border-radius: 1em;
     box-shadow: 3px 12px 22px rgba(0, 0, 0, 0.30);
+}
 
-    scroll-snap-align: center;
+.card:hover .card_text {
+    color: white;
+}
+
+.card:hover svg > path {
+    fill: white;
+}
+
+.card:hover svg > g {
+    fill: white;
 }
 
 .card_image {
 /* outline: 2px solid blue; */
-    width: 40%;
+    width: 70%;
 }
 
-.card_image > img {
+.card_image svg > path,
+.card_image svg > g {
+    fill: black;
+    transition: fill 300ms ease;
+}
+
+.card_image > svg {
+    display: inline-block;
     width: 100%;
+    height: 100%;
 }
 
 .card_text {
     max-width: 75%;
-    color: white;
     text-align: center;
     font-size: 1.1em;
     font-family: 'Montserrat', sans-serif;
