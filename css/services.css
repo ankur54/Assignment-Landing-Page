@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: row;
     overflow-x: auto;
-    gap: 3em;
+    gap: 0em;
 
     scroll-snap-type: x mandatory;
 }
@@ -23,19 +23,39 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5em;
-    width: clamp(160px, 70%, 240px);
+    width: clamp(170px, 60%, 200px);
     flex-shrink: 0;
     justify-content: center;
-    padding: 1em 2em;
-    transition: all 300ms ease-in-out;
+    padding: 1.5em 2em;
+    border-radius: 1em;
+    transition: background-color 500ms ease-in-out;
     
     scroll-snap-align: center;
 }
 
 .card:hover {
-    background-color: var(--card-color);
-    border-radius: 1em;
     box-shadow: 3px 12px 22px rgba(0, 0, 0, 0.30);
+}
+
+.card:nth-child(1):hover {
+    background-color: var(--card-color);
+}
+
+.card:nth-child(2):hover {
+    background-color: #C95F50;
+}
+
+
+.card:nth-child(3):hover {
+    background-color: #DFA03A;
+}
+
+.card:nth-child(4):hover {
+    background-color: #367E61;
+}
+
+.card:nth-child(5):hover {
+    background-color: #782F37;
 }
 
 .card:hover .card_text {
@@ -68,11 +88,13 @@
 }
 
 .card_text {
-    max-width: 75%;
+    max-width: 100%;
     text-align: center;
     font-size: 1.1em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+
+    transition: color 200ms ease-in;;
     /* outline: 2px solid red; */
 }
 
@@ -89,3 +111,9 @@
     width: clamp(200px, 70%, 180px) !important;
     height: auto !important;
 } */
+
+@media (min-width: 768px) {
+    .services_list {
+        gap: 2em;
+    }
+}
