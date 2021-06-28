@@ -16,15 +16,19 @@
 
 }
 
-html, body {
+html, body, main {
   overflow-x: hidden;
 }
 
 section {
-  /* height: 100vh; */
+  /* min-height: 100vh; */
   padding: 4em 0;
 
   scroll-snap-align: start;
+}
+
+section p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 input,
@@ -37,10 +41,11 @@ textarea {
 .container {
   display: flex;
   flex-direction: column;
-  gap: 7.5em;
-  scroll-snap-type: y proximity;
+  gap: 0em;
+
+  height: 100vh;
   overflow-y: scroll;
-  min-height: 100vh;
+  scroll-snap-type: y mandatory;
 }
 
 .section_header {
@@ -49,7 +54,7 @@ textarea {
   font-family: 'Nunito', sans-serif;
 
   max-width: 80%;
-  margin: 2.5em auto;
+  margin: 1.5em auto;
   margin-top: 0;
 }
 
@@ -57,4 +62,15 @@ textarea {
   width: 75%;
   margin: 0 auto;
   text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .section_header {
+    margin-bottom: 2.5em;
+  }
+
+  .container {
+    gap: 8vw;
+  }
 }

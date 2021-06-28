@@ -89,9 +89,12 @@
     #process_desktop {
         display: none;
     }
-
-
 }
+
+
+/* @media (max-width: 1140px) {
+    #
+} */
 
 @media only screen and (min-width: 768px) {
     #process {
@@ -99,37 +102,80 @@
     }
 
     #process_desktop {
-        position: relative;
+        /* position: relative; */
+        padding: 0;
     }
 
-    #process_desktop > .section_header {
-        width: 50%;
-        top: 0;
-        left: 10vw;
-        font-size: 4.5vw;
+    #process_desktop .section_header {
+        /* width: 50%; */
+        /* top: 0; */
+        /* left: 10vw; */
+        /* font-size: 4.5vw; */
+        margin: 0;
         text-align: left;
-        position: absolute;
-        line-height: 1.3em;
+        /* position: absolute; */
+        z-index: 2;
+        line-height: 1em;
     }
 
 
-    #process_desktop > .request-submit {
+    /* #process_desktop > .request-submit {
         position: absolute;
-        top: 15vw;
+        top: 18vw;
         left: 10vw;
+    } */
+    
+    #process_desktop .banner {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+
+        padding: 5em 10vw;
+        padding-bottom: 0;
+    }
+
+    #process_desktop .banner > .banner_text {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 65%;
+        align-items: flex-start;
+        gap: 3.5em;
+    }
+
+
+    #process_desktop .banner > .banner_image > svg {
+        width: 100%;
+    }
+    
+    #process_desktop > .banner > p {
+        min-width: 300px;
+    }
+
+    #process_desktop .btn_grp {
+        display: flex;
+        align-items: baseline;
+        gap: 2em;
+    }
+
+    #process_desktop .btn_grp .request-submit:nth-child(1) {
+        color: var(--dark-blue);
+        background-color: white;
+        border: 3px solid var(--dark-blue);
     }
 
     .process_steps {
-        position: relative;
         display: flex;
         width: 80%;
         min-width: 90vw;
-        padding: 0 4em;
+        padding: 0 1vw;
         margin-left: auto;
+        margin-right: auto;
         height: 90vh;
     }
 
     .step {
+        position: relative;
+
         display: flex;
         flex-direction: column;
         gap: 1em;
@@ -146,6 +192,22 @@
     }
     .step:nth-child(3) {
         align-self: flex-start;
+    }
+
+    .step_count {
+        position: absolute;
+        top: 30%;
+        left: 20%;
+
+        font-size: 1.25vw;
+        font-weight: bold;
+        padding: 0.75em 1em;
+        z-index: 2;
+        box-shadow: 2px 2px 5px var(--dark-green-shadow);
+        border-radius: 100px;
+
+        /* color: white; */
+        background-color: rgb(255, 206, 72);
     }
 
     .step_image {

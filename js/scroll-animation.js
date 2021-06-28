@@ -2,6 +2,7 @@ const sr = ScrollReveal({
   reset: false,
   easing: 'ease-out',
   viewFactor: 0.5,
+  container: document.querySelector('.container')
 })
 
 
@@ -86,6 +87,19 @@ else {
     origin: 'left',
     duration: 500,
     viewFactor: 0.3,
+  })
+
+  sr.reveal('#process_desktop > .section_header, #process_desktop > .request-submit', {
+    distance: '75px',
+    origin: 'top',
+    duration: 750,
+  })
+
+  sr.reveal('.step', {
+    distance: '75px',
+    origin: 'bottom',
+    interval: 700,
+    duration: 750,
   })
 }
 
