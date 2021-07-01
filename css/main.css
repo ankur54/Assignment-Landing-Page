@@ -7,13 +7,18 @@
 :root {
   --card-color: #357392;
   --background-blue: #CFD6E2;
+  --background-dark-blue: #f1f1f1;
   --dark-blue: #1B2A44;
   --dark-blue-shadow: #1b2a4473;
   --dark-green: #1B4332;
   --dark-green-shadow: #1b433280;
   --light-green-shadow: #1b43325e;
   --background-green: #CFE4D3;
-
+  --background-dark-green: #185C4F;
+  --features-button-even: rgb(183, 218, 103);
+  --features-button-odd: rgb(233, 134, 109);
+  --dark-red: #b64242;
+  --black-shadow: rgba(0, 0, 0, 0.3);
 }
 
 html, body, main {
@@ -38,6 +43,10 @@ textarea {
   border-radius: 1em;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -45,7 +54,7 @@ textarea {
 
   height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 .section_header {
