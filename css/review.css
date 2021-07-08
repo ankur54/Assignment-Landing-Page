@@ -83,3 +83,135 @@
     bottom: 6em;
     right: 1.5em;
 }
+
+@media (max-width: 767px) {
+    #review_desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    #review {
+        display: none;
+    }
+
+    #review_desktop {
+        min-height: 100vh;
+
+        display: flex;
+        align-items: center;
+        padding: 0;
+
+        outline: 2px solid red;
+    }
+
+    #review_desktop > .section_header {
+        height: 100%;
+        padding: 0 10vw;
+        margin: 0;
+
+        flex-basis: 30%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        font-family: 'Playfair Display', sans-serif;
+        text-transform: capitalize;
+        text-align: left;
+
+        border-radius: 0 0 10vw 0;
+        background-color: var(--dark-blue);
+        color: white;
+    }
+
+    .slider_container {
+        overflow-x: hidden;
+    }
+
+    #review_desktop > .review_container {
+        flex-basis: 60%;
+        flex-grow: 1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3em;
+
+        min-width: 300px;
+    }
+
+    #review_desktop .reviews {
+        display: flex;
+        align-items: center;
+        /* gap: 2em; */
+        
+        width: 100%;
+        transition: 0.5s;
+        /* overflow-x: auto; */
+    }    
+    
+    
+    #review_desktop .review_card {
+        flex-shrink: 0;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+        
+        position: relative;
+        text-align: center;
+        width: 100%;
+    }
+
+    #review_desktop .review_card > p,
+    #review_desktop .review_card > h2 {
+        width: 70%;
+        max-width: 60%;
+
+        line-height: 1.8em;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #review_desktop .review_card > h2 {
+        line-height: 1.5em;
+        font-size: 2em;
+        font-weight: 500;
+    }
+
+    .slider_container:nth-child(2) {
+        width: 50%;
+        align-self: center;
+    }
+
+    #review_desktop  .user_slider {
+        display: flex;
+        align-items: center;
+        gap: 2em;
+
+        transition: 300ms;
+
+        /* overflow-x: scroll; */
+    }
+
+    #review_desktop  .user_slider > .user_avatar {
+        flex-grow: 1;
+        transition: transform 200ms;
+        min-width: 3em;
+    }
+    
+    #review_desktop  .user_slider > .user_avatar > img {
+        border-radius: 100%;
+        width: 100%;
+        opacity: 0.5;
+    }
+    
+    #review_desktop  .user_slider > .active {
+        transform: scale(2);
+    }
+
+    #review_desktop  .user_slider > .active > img {
+        opacity: 1;
+    }
+}
