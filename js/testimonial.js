@@ -21,7 +21,7 @@ slider_btn.forEach((btn, i) => {
         console.log(curr);
 
         const user_avatar_width = slider_btn[curr].getBoundingClientRect().width;
-        const translation = (3 - i) * user_avatar_width;
+        const translation = (i > 1) ? (2 - i) * user_avatar_width : 0;
         user_slider.style.transform = `translateX(${translation}px)`;
         curr = i;
 
