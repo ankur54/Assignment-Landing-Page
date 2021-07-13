@@ -190,6 +190,7 @@
         align-items: center;
         gap: 2em;
 
+        padding: 2em 5vw;
         transition: 300ms;
 
         /* overflow-x: scroll; */

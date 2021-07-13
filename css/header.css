@@ -1,0 +1,120 @@
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    
+    min-height: 100vh;
+    background-color: var(--background-green);
+}
+
+.hero-image {
+    position: relative;
+}
+
+.play-btn {
+    position: absolute;
+    bottom: -2em;
+    right: 10vw;
+
+    display: inline-block;
+    width: 20vw;
+    padding: 1.5em 1.3em;
+    padding-left: 1.8em;
+
+    cursor: pointer;
+    border: none;
+    border-radius: 10em;
+    box-shadow: 1em 0.75em 1em var(--dark-green-shadow);
+    background-color: white;
+}
+
+.play-btn > svg {
+    width: 90%;
+    fill: var(--dark-green);
+}
+
+.hero-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10vw;
+
+    padding: 10vw;
+}
+
+.hero-header > h1 {
+    color: var(--dark-green);
+    font-size: max(4vw, 2.5em);
+    font-family: 'Playfair Display', sans-serif;
+}
+
+.hero-header > p {
+    font-family: 'Source Serif Pro', serif;
+    font-style: italic;
+}
+
+.hero-image > img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn_grp {
+    display: flex;
+    gap: 5vw;
+
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.35em;
+}
+
+.btn_grp > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0.5em 1em;
+    border: 2px solid var(--dark-green);
+    border-radius: 0.5em;
+    box-shadow: 3px 5px 10px var(--dark-green-shadow);
+}
+
+.btn_grp > .secondary {
+    color: var(--dark-green);
+}
+
+.btn_grp > .primary {
+    color: var(--background-green);
+    background-color: var(--dark-green);
+}
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+    }
+
+    .play-btn {
+        width: 15%;
+        padding: 2.75em 2.5em;
+        padding-left: 3em;
+        bottom: 50vh;
+        left: -4vw;
+        right: auto;
+    }
+
+    .hero > * {
+        width: 100%;
+    }
+
+    .hero-header {
+        padding: 5vw;
+        gap: 5vw;
+    }
+
+    .hero-header > h1 {
+        font-size: 5vw;
+    }
+
+    .btn_grp {
+        gap: 2em;
+    }
+}

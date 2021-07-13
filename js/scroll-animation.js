@@ -6,12 +6,12 @@ const sr = ScrollReveal({
 })
 
 
-sr.reveal(`.section_header`, {
-    distance: '600px',
-    origin: 'right',
-    interval: 100,
-    duration: 1000,
-})
+// sr.reveal(`.section_header`, {
+//     distance: '600px',
+//     origin: 'right',
+//     interval: 100,
+//     duration: 1000,
+// })
 
 sr.reveal('.feature:nth-child(odd)', {
     distance: '75px',
